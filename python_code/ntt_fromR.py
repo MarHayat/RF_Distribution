@@ -62,7 +62,7 @@ Inv_L=[99,1085550836599839332095977984456449136124406106240380287869914850074185
         2037004893632210474603310977018868984748962115156511416403800420355825477294773422841921621,
         2135970739633099406506331558604044839577416110609503442457036518698624890730242443329312596558002]
 
-filepath = '/Users/maryam/Desktop/Research/RF_improvment/FinalCodes/testNTT.txt'
+filepath = '/testNTT.txt'
 vec = []
 with open(filepath) as fp:
     line = fp.readline()
@@ -87,5 +87,5 @@ T=end-start
 conv.append(T)
 
 
-with open('/Users/maryam/Desktop/Research/RF_improvment/FinalCodes/outNTT.txt', 'w') as outNTT:
+with open('/outNTT.txt', 'w') as outNTT:
     outNTT.writelines("%s\n" % i for i in conv)
